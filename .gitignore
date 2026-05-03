@@ -163,6 +163,9 @@ venv.bak/
 # DocBot: HuggingFace embedding model cache
 .cache/
 
+# DocBot: third-party corpus (PostHog handbook). Re-fetch with the clone command in README.
+docs/posthog/
+
 __pycache__/
 
 
