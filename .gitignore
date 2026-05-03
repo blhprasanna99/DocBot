@@ -157,6 +157,15 @@ ENV/
 env.bak/
 venv.bak/
 
+# DocBot: persisted Chroma vector store (regenerate with `python -m app.ingest`)
+.chroma/
+
+# DocBot: HuggingFace embedding model cache
+.cache/
+
+__pycache__/
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
