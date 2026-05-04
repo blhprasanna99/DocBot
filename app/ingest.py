@@ -9,8 +9,8 @@ from langchain_chroma import Chroma
 load_dotenv()
 
 DOCS_PATH = Path(os.getenv("DOCS_PATH", "docs/posthog/contents/handbook"))
-CHROMA_PATH = os.getenv("CHROMA_DB", ".chroma")
-EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
+CHROMA_PATH = os.getenv("CHROMA_PATH", ".chroma")
+EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
 
 print(f"Loading docs from: {DOCS_PATH}")
 print(f"Persisting Chroma to: {CHROMA_PATH}")
@@ -33,7 +33,7 @@ splitter = RecursiveCharacterTextSplitter(
 chunks = splitter.split_documents(documents)
 print(f"Split into {len(chunks)} chunks")
 
-print("Loading embeddings model )downloads ~90MB on first run)...")
+print("Loading embedding model (downloads ~420MB on first run)...")
 embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
 print(f"Embedding {len(chunks)} chunks and writing to Chroma...")
