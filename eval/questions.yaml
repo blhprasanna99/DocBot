@@ -1,0 +1,39 @@
+# Eval set for DocBot retrieval quality.
+# Each entry: a real question + the source file we expect to be in the top-K results.
+# Source paths are relative to docs/posthog/contents/handbook/.
+
+- question: "What is PostHog's time off policy?"
+  expected_source: people/time-off.md
+
+- question: "What benefits does PostHog offer employees?"
+  expected_source: people/benefits.md
+
+- question: "How does career progression work at PostHog?"
+  expected_source: people/career-progression.md
+
+- question: "What does PostHog mean by being the driver?"
+  expected_source: values.md
+
+- question: "What happens during PostHog onboarding?"
+  expected_source: people/onboarding.md
+
+- question: "What is the engineering development process at PostHog?"
+  expected_source: engineering/development-process.md
+
+- question: "How does PostHog handle customer support?"
+  expected_source: support/customer-support.md
+
+- question: "How does PostHog handle employee expenses and spending?"
+  expected_source: people/spending-money.md
+
+- question: "How does PostHog handle press inquiries?"
+  expected_source: brand/press.md
+
+- question: "How is feedback given at PostHog?"
+  expected_source: people/feedback.md
+
+- question: "How does PostHog make money?"
+  expected_source: how-we-make-money.md
+
+- question: "Who does PostHog build its product for?"
+  expected_source: who-we-build-for.md
